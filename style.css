@@ -1,17 +1,23 @@
+/* mobile 375px */
+* {
+  box-sizing: border-box;
+}
 body {
   padding: 35px 40px 40px;
   margin: 0;
-  box-sizing: border-box;
-  background-size: 375px 373px;
+  background-size: 375 373;
   background-image: url(./images/bg-mobile.svg);
   background-color: hsl(257, 40%, 49%);
   background-repeat: no-repeat;
   text-align: center;
   color: #ffffff;
   background-position-x: center;
+  min-height: 100vh;
 }
+
 .community {
   width: 100%;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -54,6 +60,11 @@ body {
   border: 1px solid #ffffff;
   margin-top: 25px;
 }
+.register:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #ffffff;
+  border-color: hsl(257, 40%, 49%);
+}
 /* icon */
 .icon {
   margin-top: 60px;
@@ -61,6 +72,7 @@ body {
   flex-direction: row;
   justify-content: center;
   gap: 8px;
+  cursor: pointer;
 }
 .icon-facebook {
   width: 50px;
@@ -90,4 +102,99 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 16px;
+}
+.icon-facebook:hover {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
+.icon-twitter:hover {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
+.icon-instagram:hover {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
+.background-rotate {
+  display: none;
+}
+
+/* desktop 1440px*/
+@media (min-width: 1440px) {
+  body {
+    padding: 60px 80px 40px;
+    margin: 0;
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: -63px;
+    background-position-y: -20px;
+  }
+  .community {
+    width: 1280px;
+    height: 700px;
+    max-width: initial;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* section1 */
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .logo-mobile {
+    height: 35px;
+  }
+  .mockups {
+    display: flex;
+    justify-content: left;
+  }
+  .mockups-mobile {
+    margin-top: 100px;
+    width: 695px;
+    height: 495px;
+  }
+  /* section2 */
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: left;
+    justify-content: center;
+  }
+  .heading {
+    margin: 0;
+    padding: 0 75px 0 0;
+    font-size: 35px;
+  }
+  .content {
+    font-size: 16px;
+    margin-top: 40px;
+    padding-right: 40px;
+  }
+  .register {
+    font-size: 15px;
+    height: 55px;
+  }
+  /* icon */
+  .icon {
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 0;
+    gap: 16px;
+  }
+  .icon-facebook {
+    width: 40px;
+    height: 40px;
+  }
+  .icon-twitter {
+    width: 40px;
+    height: 40px;
+  }
+  .icon-instagram {
+    width: 40px;
+    height: 40px;
+  }
 }
