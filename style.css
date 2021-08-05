@@ -59,6 +59,7 @@ body {
   border-radius: 50px;
   border: 1px solid #ffffff;
   margin-top: 25px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 36%);
 }
 .register:hover {
   background-color: hsl(300, 69%, 71%);
@@ -75,8 +76,8 @@ body {
   cursor: pointer;
 }
 .icon-facebook {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid #ffffff;
   display: flex;
@@ -84,8 +85,8 @@ body {
   justify-content: center;
 }
 .icon-twitter {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid #ffffff;
   display: flex;
@@ -94,8 +95,8 @@ body {
   font-size: 14px;
 }
 .icon-instagram {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid #ffffff;
   display: flex;
@@ -126,7 +127,6 @@ body {
     margin: 0;
     background-image: url(./images/bg-desktop.svg);
     background-size: cover;
-    background-position: center;
     background-position-x: -63px;
     background-position-y: -20px;
   }
@@ -162,16 +162,16 @@ body {
     width: 40%;
     text-align: left;
     justify-content: center;
+    padding-right: 35px;
   }
   .heading {
     margin: 0;
-    padding: 0 75px 0 0;
     font-size: 35px;
+    padding-left: 0;
   }
   .content {
     font-size: 16px;
-    margin-top: 40px;
-    padding-right: 40px;
+    margin-top: 35px;
   }
   .register {
     font-size: 15px;
