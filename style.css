@@ -14,11 +14,11 @@ body {
 .background {
   width: 100vw;
   height: 100vh;
-  background-size: 375px 373px;
+  background-size: 100%;
   background-image: url(./images/bg-mobile.svg);
   background-color: hsl(257, 40%, 49%);
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position: top center;
   display: flex;
   justify-content: center;
   align-items: center;
